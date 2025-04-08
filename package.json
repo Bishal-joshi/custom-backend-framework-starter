@@ -1,0 +1,16 @@
+{
+  "name":"my-custom-backend",
+  "version": "1.0.0",
+  "description": "A custom backend framework for Node.js",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "tsc && node dist/index.js",
+    "test": "jest",
+    "lint": "eslint .",
+    "prepublishOnly": "npm run build"
+  },
+  "dependencies": {
+    "my-custom-backend-framework": "^1.0.13"
+  }
+}
