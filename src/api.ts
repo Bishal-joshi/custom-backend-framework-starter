@@ -13,9 +13,9 @@ export class MyAPI {
  * For demonstrating how to use the Custom ORM with a custom backend framework.
  */
 export class Users {
-  @Post("/insertUsers")
-  insertUsers(req: Request, res: Response, next: NewableFunction) {
-    myORM
+  @Post("/insertUser")
+  async insertUser(req: Request, res: Response, next: NewableFunction) {
+    const result = await myORM
       .insert("users")
       .set({
         id: 1,
@@ -23,8 +23,7 @@ export class Users {
         email: "john@email.com",
       })
       .execute();
-
-    res.send("Inserted users!");
+    res.send("Inserted");
   }
 
   @Post("/getUsers")
@@ -34,7 +33,6 @@ export class Users {
       .from("users")
       .eq("id", 1)
       .execute();
-
     res.send(result);
   }
 
@@ -43,8 +41,8 @@ export class Users {
     const result = await myORM
       .update("users")
       .set({ name: "Jane Doe" })
-      .where("id", 1)
+      .where("name", 1)
       .execute();
-    res.send(result);
+    res.send("updated");
   }
 }

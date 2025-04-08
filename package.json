@@ -11,6 +11,6 @@
     "prepublishOnly": "npm run build"
   },
   "dependencies": {
-    "my-custom-backend-framework": "^1.0.15"
+    "my-custom-backend-framework": "^1.0.16"
   }
 }
