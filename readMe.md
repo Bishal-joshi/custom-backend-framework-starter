@@ -30,3 +30,9 @@ npx run-migration
 This framework utilizes the `my-custom-backend-framework` npm package, which is freely available on the npm registry.
 
 It provides various methods, decorators, and utilities that enhance its functionality. Built as a wrapper around Express.js, this framework leverages Express.js for routing and middleware. Additionally, it includes support for a custom ORM designed for PostgreSQL. The database connection is managed using the `pg` library, which creates and supplies a connection pool.
+
+# About the custom-backend-framework package
+
+You can refer to this npm package to understand how to build a custom backend framework. It demonstrates the implementation of design patterns for creating a custom ORM, registering APIs, middleware, and more.
+
+link: https://github.com/Bishal-joshi/custom-backend-framework-open-source
