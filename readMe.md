@@ -1,16 +1,25 @@
-to start the backend framework
+Steps to setup the backend framework
+
+1. Clone the repo
+2. Install the required packages
+
+```
+npm i
+```
+
+To start the backend framework
 
 ```
 npm start
 ```
 
-to generate the migration
+To generate the migration
 
 ```
 npx generate-migration --name=migrationName
 ```
 
-to apply the migration
+To apply the migration
 
 ```
 npx run-migration
