@@ -10,4 +10,5 @@ const pool = new Pool({
   database: "framework_db",
 });
 
-new MyORM(pool, [Users, Posts]);
+const myORM = new MyORM(pool, [Users, Posts]);
+export default myORM;
