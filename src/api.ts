@@ -13,8 +13,8 @@ export class MyAPI {
  * For demonstrating how to use the Custom ORM with a custom backend framework.
  */
 export class Users {
-  @Post("/insert-users")
-  mymethod(req: Request, res: Response, next: NewableFunction) {
+  @Post("/insertUsers")
+  insertUsers(req: Request, res: Response, next: NewableFunction) {
     myORM
       .insert("users")
       .set({
