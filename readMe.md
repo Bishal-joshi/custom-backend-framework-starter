@@ -19,6 +19,8 @@ To generate the migration
 npx generate-migration --name=migrationName
 ```
 
+note: before generating migration command or after changes on Models always, run `npm build` so that the changes in typescript is reflected in js.
+
 To apply the migration
 
 ```
